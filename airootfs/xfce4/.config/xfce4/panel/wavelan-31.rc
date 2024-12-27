@@ -1,0 +1,8 @@
+Interface=ens4
+Autohide=false
+AutohideMissing=false
+SignalColors=false
+ShowIcon=true
+ShowBar=true
+Command=nm-connection-editor
+

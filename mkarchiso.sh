@@ -1,1 +1,1 @@
-mkarchiso -L AcreetionOS -v -o ../ISO . -j$nproc
+mkarchiso -L AcreetionOS-XFCE-v0.0.1 -v -o ../ISO . -j$nproc

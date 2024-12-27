@@ -23,23 +23,29 @@
 #cp /cinnamon-configs/cinnamon-stuff/usr/bin/* /usr/bin/
 #cp -r /cinnamon-configs/cinnamon-stuff/usr/share/* /usr/share/
 
+# Making necessary directories
 mkdir /home/$name/.config
-mkdir /home/$name/.config/nemo
+mkdir /home/$name/.local
 
-#cp -r /cinnamon-configs/cinnamon-stuff/nemo/* /home/$name/.config/nemo
+# Copying Conf
+cp -r acreetion-xfce-configs/.config/* /home/$name/.config/
+cp -r acreetion-xfce-configs/.local/* /home/$name/.local/
 
-cp -r /cinnamon-configs/cinnamon-stuff/.config/* /home/$name/.config/
-
+# Making Autostart Directory
 mkdir /home/$name/.config/autostart
 
-cp -r /cinnamon-configs/dd.desktop /home/$name/.config/autostart
+#Copying DD to system
+cp -r /dd/dd.desktop /home/$name/.config/autostart
+cp -r /dd/dd.sh /home/$name/.config/autostart
 
 chown -R $name:$name /home/$name/.config
 chown -R $name:$name /middle.png
 #mv /middle.png /home/$USER
 
-cp -r /cinnamon-configs/.bashrc /home/$name/.bashrc
-cp -r /cinnamon-configs/.bashrc /root
+# Copying bashrc over
+cp -r /dd/.bashrc /home/$name/.bashrc
+cp -r /dd/.bashrc /root
+
 
 mv /resolv.conf /etc/resolv.conf
 chattr +i /etc/resolv.conf
