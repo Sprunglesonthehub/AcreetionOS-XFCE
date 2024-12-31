@@ -245,5 +245,8 @@ xfwm4
 xfwm4-themes
 
 # Calamares
-qt5-base
-
+zlib
+lib32-nettle
+nettle
+yaml-cpp
+libpwquality
